@@ -1,0 +1,292 @@
+/* http://www.dynamicdrive.com/style/csslibrary/item/css_animated_underline_menu/ */
+/*color #142d42 */
+ul.animatedunderlinemenu{
+  list-style: none;
+  margin: 0;
+	margin-bottom: 0px; /* add spacing between UL and rest of content for demo purposes */
+  padding:0;
+  text-align:center; /* enter "left", "right", or "center" to orient the menu accordingly */
+  font: bold 1.6em 'Lato', sans-serif; /* use google custom font "Lato" */
+}
+
+ul.animatedunderlinemenu li{
+  display: inline;
+  margin-right:25px; /* spacing between each menu item */
+}
+
+ul.animatedunderlinemenu li a{
+  position: relative;
+	display: inline-block;
+  color: black;
+  padding: 2px 3px;
+  padding-bottom: 8px; /*spacing between each menu item and underline beneath it */
+  text-decoration: none;
+  margin-bottom: 20px; /* spacing between A elements, relevant when menu becomes multi-lined */
+  letter-spacing: .1em;
+}
+
+ul.animatedunderlinemenu li a:after{
+  position: absolute;
+	display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #142d42 ;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  -wekkit-transition: all .3s;
+  transition: all .3s;
+}
+
+ul.animatedunderlinemenu li a:hover:after{
+  width: 100%; /* increase underline width to 100% */
+  opacity: 1;
+}
+
+/* //// Expand underline effect //// */
+
+ul.animatedunderlinemenu.expand li a:after{
+  background: #142d42 ;
+	-webkit-transition: width .3s, opacity .3s, height .3s .3s;
+	transition: width .3s, opacity .3s, height .3s .3s;
+}
+
+ul.animatedunderlinemenu.expand li a:hover:after{
+  width: 100%; /* increase underline width to 100% */
+	height: 10px; /* increase underline height to 10px */
+  opacity: 1;
+}
+
+footer {
+    overflow: hidden;
+    text-align: center;
+    font-size: x-small;
+}
+
+/* Header Information */
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  max-height: 400px;
+}
+#header {
+  height:100%;
+  padding:10px;
+  text-align: center;
+  color:whitesmoke;
+  width: 350px;
+  float:left; 
+  background-color:#002343; 
+  letter-spacing: 3px;
+}
+#menu {
+  margin-top: 40px;
+  margin-left: 20px;
+  background-color:transparent;
+  float: left;
+}
+
+.submenu {
+  margin-top: 0px;
+  margin-left: 0px;
+  float: none;
+  font-size: .7em;
+  width: 100%;
+  z-index: 2;
+}
+
+/*Body Elements*/
+.content{
+  margin: 12px;
+}
+
+.centeredcontent {
+  width: 40%;
+  margin: auto;
+  content: center;
+}
+
+.split {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.cart {
+  width: 60%;
+  float: left;
+}
+.cart table{
+  table-layout: auto;
+  width: 100%;
+}
+.cart tr td {
+  text-align: right;
+  border-bottom: 1px solid #cacaca;
+}
+/* item */
+.cart tr td:last-child {
+  width: 75px;
+}
+/* addons */
+.cart tr td:nth-child(3) {
+  width: 40%;
+  min-width: 200px;
+}
+/* select addons */
+.cart tr td:nth-child(2) {
+  width: 150px;
+}
+/* quantity */
+.cart tr td:nth-child(1) {
+  width: 80px;
+}
+/* cost */
+.cart tr td:first-child {
+  width: 75px;
+  max-width: 150px;
+}
+
+.cart .total {
+  font-weight: bold;
+  text-align: right;
+  border-top: 1px solid #cacaca;
+}
+
+.order-form {
+  margin-left: 10%;
+  width: 30%;
+  float: right;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-labels {
+  display: block;
+  min-width: 20%;
+}
+
+.form-control {
+  margin-left: 40px;
+  width: auto;
+}
+
+var {
+  font-size: medium;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+/*die tables*/
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../Images/treated-base.png");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../Images/untreated-base.png");
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url("../Images/light-base.png");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  min-height: 30px;
+  text-align: center;
+  color: #000;
+}
+/*coffee tables*/
+.coffee_tables {
+  display: none;
+}
+
+/*desks*/
+.desks {
+  display: none;
+}
+
+/*bed frames*/
+.bed_frames {
+  display: none;
+}
+
+/*shelving*/
+.shelving {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 16px;
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    max-height: 200px;
+    min-height: 200px;
+    background-attachment: scroll;
+  }
+  .centercontent {
+    width: 92%;
+  }
+  #header {
+    width: 100%;
+  }
+}
+
+.gallary_item img{
+  height: 10%;
+  max-width: 70%;
+  width: auto;
+}
+
+
+
+/* Debugging 
+
+* {
+  border: 1px solid red;
+} 
+*/
