@@ -18,8 +18,8 @@ Everything in this github repo is required for full functionality minus the gith
 Steps for building:
 1. Make sure your LAMP stack is installed and ready to use.
 1. Navigate to the backend folder and open "config.php"
-2. Change $dbuser and $adminuser to your desired user for the database on your computer (likely "root")
-3. Change $pass and $adminpass to the passwords for their respective accounts (likely "")
+2. Change $dbuser and $adminuser to your desired user for the database on your system
+3. Change $pass and $adminpass to the passwords for their respective accounts
 4. save the file
 5. log in to your mysql terminal as root from within the backend folder
 6. run "CREATE DATABASE 513Woodworking;"
@@ -33,7 +33,7 @@ For more data, run "SOURCE testdata.sql" in your mysql terminal.
 Files not used in this project but there for future implementations: reciept.php
 
 ## Contributing:
-I (Brennan Longstreth) Am the only contributor at the current time to this project, all images (aside from the stock image in the gallary page) are my own creation. If you would liek to contact me please do so at example@zagmail.gonzaga.edu (would rather not get spammed yet, ill create another email for this when the site goes live).
+I (Brennan Longstreth) Am the only contributor at the current time to this project, all images (aside from the stock image in the gallary page) are my own creation. If you would like to contact me please do so at example@zagmail.gonzaga.edu (would rather not get spammed yet, I'll create another email for this when the site goes live).
 
 ## Credits:
 3D Art: Brennan Longstreth
